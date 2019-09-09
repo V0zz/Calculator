@@ -1,0 +1,75 @@
+import sys
+def greet_user():
+ """Display a simple greeting."""
+ print("Hello Young Master!")
+ print("My name is Cal!")
+
+greet_user()
+
+
+
+print("I can be used for making mathematical calculations.")
+print("Now, How may I be of assistance?")
+
+while True:
+# input choice
+    try:
+        print()
+        a=int(input("Enter First Number:"))
+        b=int(input("Enter Second Nunber:"))
+
+    except:
+        print("Error")
+        sys.exit(1)
+
+
+    print()
+    print("Calculator Operations")
+    print("1.Add")
+    print("2.Substract")
+    print("3.Multiply")
+    print("4.Divide")
+    print("5. Exit Program")
+    print()
+
+
+
+
+    try:
+        ch=int(input("Enter Choice(1-4): "))
+
+    except:
+        print("Error")
+        sys.exit(1)
+
+
+
+
+    if ch== 1:
+
+        c=a+b
+        print("Sum = ",c)
+    elif ch==2:
+
+        c=a-b
+        print("Difference = ",c)
+    elif  ch==3:
+
+        c=a*b
+        print("Product = ",c)
+    elif ch==4:
+
+        c=a/b
+        print("Quotient = ",c)
+    elif ch==5:
+        #if ch==6:
+        g=str(input("Continue?"))
+
+
+
+
+    else: print("Invalid Choice")
+
+
+else:
+    Break
