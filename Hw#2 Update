@@ -1,0 +1,72 @@
+import sys
+def greet_user():
+ """Display a simple greeting."""
+ print("Hello Young Master!")
+ print("My name is Cal!")
+
+greet_user()
+
+
+
+print("I can be used for making mathematical calculations.")
+print("Now, How may I be of assistance?")
+
+while True:
+# input choice
+    try:
+        print()
+        a=float(input("Enter the first number:"))
+        b=float(input("Enter the second nunber:"))
+
+    except:
+        print("Error")
+        sys.exit(1)
+
+
+    # print()
+    # print("Calculator Operations")
+    # print("+.Add")
+    # print("-.Substract")
+    # print("*.Multiply")
+    # print("/.Divide")
+    # print("**.Exponential")
+    # print()
+
+    try:
+        ch=input("Enter the operation: ")
+
+    except:
+        print("Error")
+        sys.exit(1)
+
+    if ch=="+":
+
+        c=a+b
+        print("Sum = ",c)
+
+
+    elif ch=="-":
+
+        c=a-b
+        print("Difference = ",c)
+    elif  ch=="*":
+
+        c=a*b
+        print("Product = ",c)
+    elif ch=="/":
+
+        c=a/b
+        print("Quotient = ",c)
+    elif ch == "**":
+
+        c = a ** b
+        print("Exponential = ", c)
+
+    else: print("Invalid Choice")
+
+    User = input("Do you wish to exit?")
+    if User == "n":
+        continue
+    elif User == "y":
+        break
+
